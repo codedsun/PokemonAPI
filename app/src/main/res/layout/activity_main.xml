@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.suneet.lecture11hw.MainActivity"
+    android:background="@color/colorPrimaryDark">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:orientation="horizontal"
+
+       android:id="@+id/linear_Layout1">
+
+       <com.github.florent37.materialtextfield.MaterialTextField
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           app:mtf_image="@drawable/iconedittext"
+           app:mtf_openKeyboardOnFocus="true">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/edit_text"
+               android:layout_gravity="bottom"
+               android:inputType="number"
+               android:textColor="#000000"/>
+
+
+       </com.github.florent37.materialtextfield.MaterialTextField>
+       <ImageButton
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+           android:id="@+id/hit"
+           android:background="@drawable/pokeball"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/image1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/image2"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/image3"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/image4"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/id"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Base Experience"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/base_experience"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/order"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abilities"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/abilities"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/weight"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Area"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/location_area"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/height"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Types"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:id="@+id/types"/>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/backButton"
+        android:background="@drawable/back_button"/>
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/button"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="95dp"
+
+        android:id="@+id/clickMe"/>
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/next_button"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="5dp"
+        android:id="@+id/forwardButton"/>
+</LinearLayout>
+</LinearLayout>
